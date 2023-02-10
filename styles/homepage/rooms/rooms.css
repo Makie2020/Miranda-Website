@@ -22,6 +22,7 @@
 .rooms__iconbox {
   background: #FFFFFF;
   box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+  bottom: -10em;
 }
 .rooms__iconbox__icon {
   margin: 2%;
@@ -59,14 +60,50 @@
   color: #BEAD8E;
 }
 
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container {
+  display: grid;
+  place-items: center;
 }
-.swiper-slide__img img {
-  width: 400px;
-  height: 400px;
+
+.swiper {
+  width: 80%;
+}
+
+.image__wrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.image__wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+}
+
+.swiper-button-prev {
+  background-color: #FFFFFF;
+  padding: 3%;
+}
+
+.swiper-button-next {
+  color: #FFFFFF;
+  background-color: #BDAC8D;
+  padding: 3%;
+}
+
+.swiper_text {
+  position: relative;
+  top: -2em;
+  background-color: #FFFFFF;
+  width: 65%;
+  display: flex;
 }
 
 @media only screen and (min-width: 1000px) {

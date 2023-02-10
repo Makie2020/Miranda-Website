@@ -22,6 +22,7 @@
     <title>Website Miranda Hotel</title>
 </head>
 <body>
+  <i class="scroll-top-button fa-solid fa-circle-up"></i>
   <section class="navbarSection">
     <nav class="navbar">
       <div class="navbar__left">
@@ -31,14 +32,15 @@
           <h4 class="navbar__left__title__name">MIRANDA</h4>
         </div>
       </div>
+      
       <a id="menu-icon" class="navbar__icon" onclick="buttonClick()">
         <i class="fa fa-bars"></i>
       </a>
       <div class="navbar__list"  id="navbar" >
-          <a href="#about" class="navbar__list__links navbar__active">About Us</a>
-          <a href="#rooms" class="navbar__list__links">Rooms</a>
-          <a href="#offers" class="navbar__list__links">Offers</a>
-          <a href="#contact" class="navbar__list__links">Contact</a>
+          <a href="about.html" class="navbar__list__links navbar__active">About Us</a>
+          <a href="rooms.html" class="navbar__list__links">Rooms</a>
+          <a href="offers.html" class="navbar__list__links">Offers</a>
+          <a href="details.html" class="navbar__list__links">Contact</a>
       </div>
       <div class="navbar__iconsContainer">
         <div class="navbar__iconsContainer__box">  
@@ -234,5 +236,7 @@
       <p class="disclaimer__text">Terms of use | Privacy Environmental Policy</p>
     </div> 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="./javascript/homepage.js"></script>
+    <script src="./javascript/swiper.js"></script>
 </body>
 </html>

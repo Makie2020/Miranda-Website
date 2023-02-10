@@ -16,7 +16,7 @@
   font-weight: 400;
   line-height: 60px;
   letter-spacing: -1.2000000477px;
-  margin: 10% 0%;
+  margin: 4% 0%;
 }
 .menu__box {
   display: flex;
@@ -54,8 +54,8 @@
   font-weight: 400;
   line-height: 24px;
 }
-.menu__pagination {
-  text-align: end;
+.menu__desktop {
+  display: none;
 }
 .menu__images {
   text-align: center;
@@ -102,7 +102,7 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .menu__pagination {
-    display: none;
+  .menu__desktop {
+    display: block;
   }
 }/*# sourceMappingURL=menu.css.map */

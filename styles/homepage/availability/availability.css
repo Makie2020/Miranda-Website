@@ -26,29 +26,13 @@
   padding: 8px;
   padding-right: 50%;
 }
-.availibility__input__::-moz-placeholder {
+.availibility__input__box::-webkit-input-placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16.41px;
   align-items: center;
-  margin-right: 10%;
-}
-.availibility__input__:-ms-input-placeholder {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16.41px;
-  align-items: center;
-  margin-right: 10%;
-}
-.availibility__input__::placeholder {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16.41px;
-  align-items: center;
-  margin-right: 10%;
+  padding-left: 10%;
 }
 .availibility__button {
   font-family: "Archivo", sans-serif;

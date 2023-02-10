@@ -19,7 +19,7 @@ $third-font: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 60px;
     letter-spacing: -1.2000000476837158px;
-    margin: 10% 0%;
+    margin: 4% 0%;
       } 
   &__box{
     display: flex;
@@ -56,8 +56,8 @@ $third-font: 'Roboto', sans-serif;
       }
     }
   }
-  &__pagination{
-    text-align: end;
+  &__desktop{
+    display: none;
   }
   &__images {
     text-align: center;
@@ -104,8 +104,8 @@ $third-font: 'Roboto', sans-serif;
         object-fit: cover;
       }
     }
-    &__pagination{
-      display: none;
+    &__desktop{
+      display: block;
     }
   }
 }
