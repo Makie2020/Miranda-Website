@@ -1,0 +1,37 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+$color: #FFFFFF;
+
+.about{
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
+  &__video{
+    margin-bottom: 10%;
+    text-align: center;
+  }
+  &__title{
+    font-family: $primary-font;
+    font-size: 32px;
+    font-weight: 400;
+    color: #222222;
+  }
+
+}
+@media only screen and (min-width: 1000px) {
+  .about{
+    margin: 0 15%;
+    &__video{
+      margin-left: 15%;
+      margin-bottom: 5%;
+    }
+    &__title{
+      width: 65%;
+      margin: 0 auto;
+    }
+  }
+
+}

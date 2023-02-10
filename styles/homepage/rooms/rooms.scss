@@ -1,0 +1,107 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+
+.rooms{
+  padding-left: 5%;
+  text-align: center;
+  &__subtitle{
+    color: #777777;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2.799999952316284px;
+  }
+  &__title{
+    color: #222222;
+    font-family: $primary-font;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -1.2000000476837158px;
+    margin: 5% 0%;
+  }
+  &__iconbox{
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+    &__icon{
+      margin: 2%;
+    }
+  }
+  &__info{
+    text-align: center;
+    margin-right: 5%;
+    &__title{
+      font-family: $primary-font;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: -1.2000000476837158px;
+    }
+    &__text{
+      font-family: $third-font;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 5% 0%;
+    }
+    &__price{
+      font-family: $secondary-font;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 43px;
+      color: #BEAD8E;
+      ;
+    }
+    &__night{
+      font-family: $secondary-font;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 43px;
+      color:#BEAD8E;
+      ;
+    }
+  }
+}
+.swiper-slide{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+  &__img{
+    img{
+      width: 400px;
+      height:400px;
+      }
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .rooms{
+    padding-top: 7em;
+    text-align: center;
+    &__iconbox{
+      width: 15em;
+    }
+    &__info{
+      display: flex;
+      justify-content: center;
+      text-align: left;
+      max-width: 45%;
+      &__title{
+        font-size: 28px;
+      }
+      &__firstbox{
+        flex: 2;
+      }
+      &__secondbox{
+        flex: 1;
+        padding-top: 2em;
+
+      }
+    }
+  }
+}

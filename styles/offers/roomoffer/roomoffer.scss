@@ -1,0 +1,92 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+$color: #FFFFFF;
+
+.offer{
+  padding: 5%;
+  &__box{
+    box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+    margin-bottom: 10%;
+  }
+  &__imagebox{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    &__img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__details{
+    &__subtitle{
+      font-family: $secondary-font;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 2.799999952316284px;
+      color: #777777;
+      margin: 5% 0%;
+    }
+    &__title{
+      font-family: $primary-font;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: -1.440000057220459px;
+      color: #222222;
+    }
+    &__text{
+      font-family: $third-font;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #777777;
+      margin: 5% 0%;
+      width: 95%;
+    }
+  }
+   &__list{
+    display: flex;
+    &__ul{
+      list-style-type: none; 
+      flex: 1;
+    }
+    &__li{
+      font-family: $third-font;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px;
+      color: #777777;
+      margin: 2%;
+      display: flex;
+      align-items: center;
+    }
+    &__img{
+      padding: 5%;
+      margin-right: 2%;
+    }
+  }
+  &__buttonbox{
+    &__button{
+      background-color: #BDAC8D;
+      border: none;
+      color: $color;
+      padding: 20px;
+      width: 70%;
+      font-family: $secondary-font;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 2.8px;
+      margin: 5% 0%;
+    }
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .offer{
+    padding: 5% 15%;
+  }
+}

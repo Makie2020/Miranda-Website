@@ -1,0 +1,36 @@
+.amenities {
+  padding: 5%;
+}
+.amenities__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 5% 0 .amenities__title;
+}
+.amenities__line {
+  border-top: #F1F1F1;
+  width: 90%;
+  margin: 5% 0%;
+}
+.amenities__list {
+  display: flex;
+}
+.amenities__list__ul {
+  list-style-type: none;
+  flex: 1;
+}
+.amenities__list__li {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #777777;
+  margin: 2%;
+  display: flex;
+  align-items: center;
+}
+.amenities__list__img {
+  padding: 5%;
+  margin-right: 2%;
+}/*# sourceMappingURL=amenities.css.map */
