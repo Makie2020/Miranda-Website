@@ -12,6 +12,7 @@
   box-shadow: 0px 1px 5px gray;
   color: #111111;
   font-family: "Archivo", sans-serif;
+  z-index: 2;
 }
 .navbar____icon {
   display: block;
@@ -22,6 +23,11 @@
   flex: 3;
   align-items: center;
   padding-left: 2%;
+}
+.navbar__left__a {
+  text-decoration: none;
+  display: flex;
+  color: #111111;
 }
 .navbar__left__logo {
   box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
@@ -87,12 +93,17 @@
     margin: 0 auto;
     background-color: #FFFFFF;
     padding: 2%;
-    margin-bottom: -10px;
+    margin-bottom: -40px;
+    position: relative;
   }
   .navbar__left__logo {
     font-size: 40px;
     line-height: 43.52px;
-    margin-right: 5%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .navbar__left__title__hotel {
     font-size: 26px;

@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <title>Website Miranda Hotel</title>
 </head>
 <body>
@@ -22,11 +23,13 @@
   <section class="navbarSection">
     <nav class="navbar">
       <div class="navbar__left">
-        <p class="navbar__left__logo">H</p>
-        <div class="navbar__left__title">
-          <h4 class="navbar__left__title__hotel">HOTEL</h4>
-          <h4 class="navbar__left__title__name">MIRANDA</h4>
-        </div>
+        <a href="index.html" class="navbar__left__a">
+          <p class="navbar__left__logo">H</p>
+          <div class="navbar__left__title">
+            <h4 class="navbar__left__title__hotel">HOTEL</h4>
+            <h4 class="navbar__left__title__name">MIRANDA</h4>
+          </div>
+        </a>
       </div>
       
       <a id="menu-icon" class="navbar__icon" onclick="buttonClick()">
@@ -61,180 +64,200 @@
       <div class="offer__box">
         <div class="offer__imagebox">
           <img src="./images/20210423_102431.jpg" alt="view from apartment" class="offer__imagebox__img"/>
-        </div>
-        <div class="offer__details">
-          <h3 class="offer__details__subtitle"> DOUBLE BED</h3>
-          <h1 class="offer__details__title">Luxury Double <br> Bed</h1>
-          <div>
-            <p class="offer__details__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <div class="offer__imagebox__text"> 
+            <p class="offer__details__priceOld">$500 <span class="offer__details__priceOld__night">/Night</span></p>
+            <p class="offer__details__priceNew">$345 <span class="offer__details__priceNew__night">/Night</span></p>
           </div>
         </div>
-        <div class="offer__list">
-          <ul class="offer__list__ul">
-            <li class="offer__list__li"><img src="./icons/RoomDetails/AC.png" alt="icon Air Conditioning" class="offer__list__img"/>Air conditioner </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Breakfast.png" alt="icon Breakfast" class="offer__list__img"/>Breakfast</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Cleaning.png" alt="icon Cleaning" class="offer__list__img"/>Cleaning </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Grocery.png" alt="icon Grocery" class="offer__list__img"/>Grocery</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Shop.png" alt="icon Shop" class="offer__list__img"/>Shop near</li>
-          </ul>
-          <ul class="offer__list__ul">
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Wifi.png" alt="icon High speed Wifi" class="offer__list__img"/>High speed Wifi </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Kitchen.png" alt="icon Kitchen" class="offer__list__img"/>Kitchen</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Shower.png" alt="icon Shower" class="offer__list__img"/>Shower </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Single Bed.png" alt="icon Single bed" class="offer__list__img"/>Single bed</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Towels.png" alt="icon Towels" class="offer__list__img"/>Towels</li>
-          </ul>
+        <div class="offer__container">
+          <div class="offer__container__details">
+            <div class="offer__details">
+              <h3 class="offer__details__subtitle"> DOUBLE BED</h3>
+              <h1 class="offer__details__title">Luxury Double Bed</h1>
+            </div>
+            <div class="offer__details__price">
+              <p class="offer__details__priceOld">$500 <span class="offer__details__priceOld__night">/Night</span></p>
+              <p class="offer__details__priceNew">$345 <span class="offer__details__priceNew__night">/Night</span></p>
+            </div>
+          </div>
+          <hr class="offer__line">
+          <div class="offer__containerDetails"> 
+            <div class="offer__detailsContainer">
+              <p class="offer__details__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <button class="offer__buttonbox__button offer__buttonbox__button__desktop">BOOK NOW</button>
+            </div>
+            <div class="offer__list">
+              <ul class="offer__list__ul">
+                <li class="offer__list__li"><img src="./icons/RoomDetails/AC.png" alt="icon Air Conditioning" class="offer__list__img"/>Air conditioner </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Breakfast.png" alt="icon Breakfast" class="offer__list__img"/>Breakfast</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Cleaning.png" alt="icon Cleaning" class="offer__list__img"/>Cleaning </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Grocery.png" alt="icon Grocery" class="offer__list__img"/>Grocery</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Shop.png" alt="icon Shop" class="offer__list__img"/>Shop near</li>
+              </ul>
+              <ul class="offer__list__ul">
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Wifi.png" alt="icon High speed Wifi" class="offer__list__img"/>High speed Wifi </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Kitchen.png" alt="icon Kitchen" class="offer__list__img"/>Kitchen</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Shower.png" alt="icon Shower" class="offer__list__img"/>Shower </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Single Bed.png" alt="icon Single bed" class="offer__list__img"/>Single bed</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Towels.png" alt="icon Towels" class="offer__list__img"/>Towels</li>
+              </ul>
+            </div>
+          </div>         
         </div>
+        
         <div class="offer__buttonbox">
-          <button class="offer__buttonbox__button">BOOK NOW</button>
+          <button class="offer__buttonbox__button offer__buttonbox__button__movil">BOOK NOW</button>
         </div>
       </div>
+      <div class="offer__box">
+        <div class="offer__imagebox">
+          <img src="./images/20210423_102431.jpg" alt="view from apartment" class="offer__imagebox__img"/>
+          <div class="offer__imagebox__text"> 
+            <p class="offer__details__priceOld">$500 <span class="offer__details__priceOld__night">/Night</span></p>
+            <p class="offer__details__priceNew">$345 <span class="offer__details__priceNew__night">/Night</span></p>
+          </div>
+        </div>
+        <div class="offer__container">
+          <div class="offer__container__details">
+            <div class="offer__details">
+              <h3 class="offer__details__subtitle"> DOUBLE BED</h3>
+              <h1 class="offer__details__title">Luxury Double Bed</h1>
+            </div>
+            <div class="offer__details__price">
+              <p class="offer__details__priceOld">$500 <span class="offer__details__priceOld__night">/Night</span></p>
+              <p class="offer__details__priceNew">$345 <span class="offer__details__priceNew__night">/Night</span></p>
+            </div>
+          </div>
+          <hr class="offer__line">
+          <div class="offer__containerDetails"> 
+            <div class="offer__detailsContainer">
+              <p class="offer__details__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <button class="offer__buttonbox__button offer__buttonbox__button__desktop">BOOK NOW</button>
+            </div>
+            <div class="offer__list">
+              <ul class="offer__list__ul">
+                <li class="offer__list__li"><img src="./icons/RoomDetails/AC.png" alt="icon Air Conditioning" class="offer__list__img"/>Air conditioner </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Breakfast.png" alt="icon Breakfast" class="offer__list__img"/>Breakfast</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Cleaning.png" alt="icon Cleaning" class="offer__list__img"/>Cleaning </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Grocery.png" alt="icon Grocery" class="offer__list__img"/>Grocery</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Shop.png" alt="icon Shop" class="offer__list__img"/>Shop near</li>
+              </ul>
+              <ul class="offer__list__ul">
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Wifi.png" alt="icon High speed Wifi" class="offer__list__img"/>High speed Wifi </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Kitchen.png" alt="icon Kitchen" class="offer__list__img"/>Kitchen</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Shower.png" alt="icon Shower" class="offer__list__img"/>Shower </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Single Bed.png" alt="icon Single bed" class="offer__list__img"/>Single bed</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Towels.png" alt="icon Towels" class="offer__list__img"/>Towels</li>
+              </ul>
+            </div>
+          </div>         
+        </div>
+        
+        <div class="offer__buttonbox">
+          <button class="offer__buttonbox__button offer__buttonbox__button__movil">BOOK NOW</button>
+        </div>
+      </div>
+      <div class="offer__box">
+        <div class="offer__imagebox">
+          <img src="./images/20210423_102431.jpg" alt="view from apartment" class="offer__imagebox__img"/>
+          <div class="offer__imagebox__text"> 
+            <p class="offer__details__priceOld">$500 <span class="offer__details__priceOld__night">/Night</span></p>
+            <p class="offer__details__priceNew">$345 <span class="offer__details__priceNew__night">/Night</span></p>
+          </div>
+        </div>
+        <div class="offer__container">
+          <div class="offer__container__details">
+            <div class="offer__details">
+              <h3 class="offer__details__subtitle"> DOUBLE BED</h3>
+              <h1 class="offer__details__title">Luxury Double Bed</h1>
+       
+            </div>
+            <div class="offer__details__price">
+              <p class="offer__details__priceOld">$500 <span class="offer__details__priceOld__night">/Night</span></p>
+              <p class="offer__details__priceNew">$345 <span class="offer__details__priceNew__night">/Night</span></p>
+            </div>
+          </div>
+          <hr class="offer__line">
+          <div class="offer__containerDetails"> 
+            <div class="offer__detailsContainer">
+              <p class="offer__details__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <button class="offer__buttonbox__button offer__buttonbox__button__desktop">BOOK NOW</button>
+            </div>
+            <div class="offer__list">
+              <ul class="offer__list__ul">
+                <li class="offer__list__li"><img src="./icons/RoomDetails/AC.png" alt="icon Air Conditioning" class="offer__list__img"/>Air conditioner </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Breakfast.png" alt="icon Breakfast" class="offer__list__img"/>Breakfast</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Cleaning.png" alt="icon Cleaning" class="offer__list__img"/>Cleaning </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Grocery.png" alt="icon Grocery" class="offer__list__img"/>Grocery</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Shop.png" alt="icon Shop" class="offer__list__img"/>Shop near</li>
+              </ul>
+              <ul class="offer__list__ul">
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Wifi.png" alt="icon High speed Wifi" class="offer__list__img"/>High speed Wifi </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Kitchen.png" alt="icon Kitchen" class="offer__list__img"/>Kitchen</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Shower.png" alt="icon Shower" class="offer__list__img"/>Shower </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Single Bed.png" alt="icon Single bed" class="offer__list__img"/>Single bed</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Towels.png" alt="icon Towels" class="offer__list__img"/>Towels</li>
+              </ul>
+            </div>
+          </div>         
+        </div>
+        
+        <div class="offer__buttonbox">
+          <button class="offer__buttonbox__button offer__buttonbox__button__movil">BOOK NOW</button>
+        </div>
+      </div>
+      <div class="offer__box">
+        <div class="offer__imagebox">
+          <img src="./images/20210423_102431.jpg" alt="view from apartment" class="offer__imagebox__img"/>
+          <div class="offer__imagebox__text"> 
+            <p class="offer__details__priceOld">$500 <span class="offer__details__priceOld__night">/Night</span></p>
+            <p class="offer__details__priceNew">$345 <span class="offer__details__priceNew__night">/Night</span></p>
+          </div>
+        </div>
+        <div class="offer__container">
+          <div class="offer__container__details">
+            <div class="offer__details">
+              <h3 class="offer__details__subtitle"> DOUBLE BED</h3>
+              <h1 class="offer__details__title">Luxury Double Bed</h1>
+            </div>
+            <div class="offer__details__price">
+              <p class="offer__details__priceOld">$500 <span class="offer__details__priceOld__night">/Night</span></p>
+              <p class="offer__details__priceNew">$345 <span class="offer__details__priceNew__night">/Night</span></p>
+            </div>
+          </div>
+          <hr class="offer__line">
+          <div class="offer__containerDetails"> 
+            <div class="offer__detailsContainer">
+              <p class="offer__details__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <button class="offer__buttonbox__button offer__buttonbox__button__desktop">BOOK NOW</button>
+            </div>
+            <div class="offer__list">
+              <ul class="offer__list__ul">
+                <li class="offer__list__li"><img src="./icons/RoomDetails/AC.png" alt="icon Air Conditioning" class="offer__list__img"/>Air conditioner </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Breakfast.png" alt="icon Breakfast" class="offer__list__img"/>Breakfast</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Cleaning.png" alt="icon Cleaning" class="offer__list__img"/>Cleaning </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Grocery.png" alt="icon Grocery" class="offer__list__img"/>Grocery</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Shop.png" alt="icon Shop" class="offer__list__img"/>Shop near</li>
+              </ul>
+              <ul class="offer__list__ul">
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Wifi.png" alt="icon High speed Wifi" class="offer__list__img"/>High speed Wifi </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Kitchen.png" alt="icon Kitchen" class="offer__list__img"/>Kitchen</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Shower.png" alt="icon Shower" class="offer__list__img"/>Shower </li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Single Bed.png" alt="icon Single bed" class="offer__list__img"/>Single bed</li>
+                <li class="offer__list__li"><img src="./icons/RoomDetails/Towels.png" alt="icon Towels" class="offer__list__img"/>Towels</li>
+              </ul>
+            </div>
+          </div>         
+        </div>
+        
+        <div class="offer__buttonbox">
+          <button class="offer__buttonbox__button offer__buttonbox__button__movil">BOOK NOW</button>
+        </div>
+      </div>    
+
+
+
       
-      <div class="offer__box">
-        <div class="offer__imagebox">
-          <img src="./images/20210423_102431.jpg" alt="view from apartment" class="offer__imagebox__img"/>
-        </div>
-        <div class="offer__details">
-          <h3 class="offer__details__subtitle"> DOUBLE BED</h3>
-          <h1 class="offer__details__title">Luxury Double <br> Bed</h1>
-          <p class="offer__details__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
-        <div class="offer__list">
-          <ul class="offer__list__ul">
-            <li class="offer__list__li"><img src="./icons/RoomDetails/AC.png" alt="icon Air Conditioning" class="offer__list__img"/>Air conditioner </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Breakfast.png" alt="icon Breakfast" class="offer__list__img"/>Breakfast</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Cleaning.png" alt="icon Cleaning" class="offer__list__img"/>Cleaning </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Grocery.png" alt="icon Grocery" class="offer__list__img"/>Grocery</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Shop.png" alt="icon Shop" class="offer__list__img"/>Shop near</li>
-          </ul>
-          <ul class="offer__list__ul">
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Wifi.png" alt="icon High speed Wifi" class="offer__list__img"/>High speed Wifi </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Kitchen.png" alt="icon Kitchen" class="offer__list__img"/>Kitchen</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Shower.png" alt="icon Shower" class="offer__list__img"/>Shower </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Single Bed.png" alt="icon Single bed" class="offer__list__img"/>Single bed</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Towels.png" alt="icon Towels" class="offer__list__img"/>Towels</li>
-          </ul>
-        </div>
-        <div class="offer__buttonbox">
-          <button class="offer__buttonbox__button">BOOK NOW</button>
-        </div>
-      </div>
-      <div class="offer__box">
-        <div class="offer__imagebox">
-          <img src="./images/20210423_102431.jpg" alt="view from apartment" class="offer__imagebox__img"/>
-        </div>
-        <div class="offer__details">
-          <h3 class="offer__details__subtitle"> DOUBLE BED</h3>
-          <h1 class="offer__details__title">Luxury Double <br> Bed</h1>
-          <p class="offer__details__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
-        <div class="offer__list">
-          <ul class="offer__list__ul">
-            <li class="offer__list__li"><img src="./icons/RoomDetails/AC.png" alt="icon Air Conditioning" class="offer__list__img"/>Air conditioner </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Breakfast.png" alt="icon Breakfast" class="offer__list__img"/>Breakfast</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Cleaning.png" alt="icon Cleaning" class="offer__list__img"/>Cleaning </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Grocery.png" alt="icon Grocery" class="offer__list__img"/>Grocery</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Shop.png" alt="icon Shop" class="offer__list__img"/>Shop near</li>
-          </ul>
-          <ul class="offer__list__ul">
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Wifi.png" alt="icon High speed Wifi" class="offer__list__img"/>High speed Wifi </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Kitchen.png" alt="icon Kitchen" class="offer__list__img"/>Kitchen</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Shower.png" alt="icon Shower" class="offer__list__img"/>Shower </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Single Bed.png" alt="icon Single bed" class="offer__list__img"/>Single bed</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Towels.png" alt="icon Towels" class="offer__list__img"/>Towels</li>
-          </ul>
-        </div>
-        <div class="offer__buttonbox">
-          <button class="offer__buttonbox__button">BOOK NOW</button>
-        </div>
-      </div>
-      <div class="offer__box">
-        <div class="offer__imagebox">
-          <img src="./images/20210423_102431.jpg" alt="view from apartment" class="offer__imagebox__img"/>
-        </div>
-        <div class="offer__details">
-          <h3 class="offer__details__subtitle"> DOUBLE BED</h3>
-          <h1 class="offer__details__title">Luxury Double <br> Bed</h1>
-          <p class="offer__details__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
-        <div class="offer__list">
-          <ul class="offer__list__ul">
-            <li class="offer__list__li"><img src="./icons/RoomDetails/AC.png" alt="icon Air Conditioning" class="offer__list__img"/>Air conditioner </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Breakfast.png" alt="icon Breakfast" class="offer__list__img"/>Breakfast</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Cleaning.png" alt="icon Cleaning" class="offer__list__img"/>Cleaning </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Grocery.png" alt="icon Grocery" class="offer__list__img"/>Grocery</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Shop.png" alt="icon Shop" class="offer__list__img"/>Shop near</li>
-          </ul>
-          <ul class="offer__list__ul">
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Wifi.png" alt="icon High speed Wifi" class="offer__list__img"/>High speed Wifi </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Kitchen.png" alt="icon Kitchen" class="offer__list__img"/>Kitchen</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Shower.png" alt="icon Shower" class="offer__list__img"/>Shower </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Single Bed.png" alt="icon Single bed" class="offer__list__img"/>Single bed</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Towels.png" alt="icon Towels" class="offer__list__img"/>Towels</li>
-          </ul>
-        </div>
-      </div>
-      <div class="offer__buttonbox">
-        <button class="offer__buttonbox__button">BOOK NOW</button>
-      </div>
-      <div class="offer__box">
-        <div class="offer__imagebox">
-          <img src="./images/20210423_102431.jpg" alt="view from apartment" class="offer__imagebox__img"/>
-        </div>
-        <div class="offer__details">
-          <h3 class="offer__details__subtitle"> DOUBLE BED</h3>
-          <h1 class="offer__details__title">Luxury Double <br> Bed</h1>
-          <p class="offer__details__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
-        <div class="offer__list">
-          <ul class="offer__list__ul">
-            <li class="offer__list__li"><img src="./icons/RoomDetails/AC.png" alt="icon Air Conditioning" class="offer__list__img"/>Air conditioner </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Breakfast.png" alt="icon Breakfast" class="offer__list__img"/>Breakfast</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Cleaning.png" alt="icon Cleaning" class="offer__list__img"/>Cleaning </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Grocery.png" alt="icon Grocery" class="offer__list__img"/>Grocery</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Shop.png" alt="icon Shop" class="offer__list__img"/>Shop near</li>
-          </ul>
-          <ul class="offer__list__ul">
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Wifi.png" alt="icon High speed Wifi" class="offer__list__img"/>High speed Wifi </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Kitchen.png" alt="icon Kitchen" class="offer__list__img"/>Kitchen</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Shower.png" alt="icon Shower" class="offer__list__img"/>Shower </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Single Bed.png" alt="icon Single bed" class="offer__list__img"/>Single bed</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Towels.png" alt="icon Towels" class="offer__list__img"/>Towels</li>
-          </ul>
-        </div>
-        <div class="offer__buttonbox">
-          <button class="offer__buttonbox__button">BOOK NOW</button>
-        </div>
-      </div>
-      <div class="offer__box">
-        <div class="offer__imagebox">
-          <img src="./images/20210423_102431.jpg" alt="view from apartment" class="offer__imagebox__img"/>
-        </div>
-        <div class="offer__details">
-          <h3 class="offer__details__subtitle"> DOUBLE BED</h3>
-          <h1 class="offer__details__title">Luxury Double <br> Bed</h1>
-          <p class="offer__details__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
-        <div class="offer__list">
-          <ul class="offer__list__ul">
-            <li class="offer__list__li"><img src="./icons/RoomDetails/AC.png" alt="icon Air Conditioning" class="offer__list__img"/>Air conditioner </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Breakfast.png" alt="icon Breakfast" class="offer__list__img"/>Breakfast</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Cleaning.png" alt="icon Cleaning" class="offer__list__img"/>Cleaning </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Grocery.png" alt="icon Grocery" class="offer__list__img"/>Grocery</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Shop.png" alt="icon Shop" class="offer__list__img"/>Shop near</li>
-          </ul>
-          <ul class="offer__list__ul">
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Wifi.png" alt="icon High speed Wifi" class="offer__list__img"/>High speed Wifi </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Kitchen.png" alt="icon Kitchen" class="offer__list__img"/>Kitchen</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Shower.png" alt="icon Shower" class="offer__list__img"/>Shower </li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Single Bed.png" alt="icon Single bed" class="offer__list__img"/>Single bed</li>
-            <li class="offer__list__li"><img src="./icons/RoomDetails/Towels.png" alt="icon Towels" class="offer__list__img"/>Towels</li>
-          </ul>
-        </div>
-        <div class="offer__buttonbox">
-          <button class="offer__buttonbox__button">BOOK NOW</button>
-        </div>
-      </div>
     </section>
     
 

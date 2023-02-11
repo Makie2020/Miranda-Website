@@ -11,9 +11,14 @@
 }
 .footer__icons__icon {
   margin: 3%;
+  width: 20px;
+  height: 20px;
+}
+.footer__icons__icon:hover {
+  filter: brightness(50%);
 }
 .footer__icons__icon__twitter {
-  background-image: url(../../../icons/BackgroundTwitter.png);
+  background-color: #BEAD8E;
 }
 .footer__list__title {
   font-family: "Old Standard TT", serif;
@@ -65,7 +70,7 @@
 .disclaimer {
   background-color: #F8F8F8;
   width: 100%;
-  padding-top: 5%;
+  padding-top: 3%;
 }
 .disclaimer__text {
   font-family: "Roboto", sans-serif;
@@ -73,7 +78,7 @@
   font-weight: 700;
   line-height: 19px;
   letter-spacing: -0.4799999893px;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -100,7 +105,7 @@
   .disclaimer {
     display: flex;
     width: 100%;
-    padding: 0 15%;
+    padding: 2% 15%;
     justify-content: space-between;
   }
 }/*# sourceMappingURL=footer.css.map */

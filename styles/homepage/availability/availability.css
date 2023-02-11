@@ -60,9 +60,6 @@
   .availibility__box__::-moz-placeholder {
     background-position: left 10px center;
   }
-  .availibility__box__:-ms-input-placeholder {
-    background-position: left 10px center;
-  }
   .availibility__box__::placeholder {
     background-position: left 10px center;
   }

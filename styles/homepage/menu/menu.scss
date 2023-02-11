@@ -70,7 +70,22 @@ $third-font: 'Roboto', sans-serif;
       margin-left: 3%;
     }
   }
+  &__button {
+    position:unset !important;
+    right: auto !important;
+    margin: 0 !important;
+    width: 45px !important;
+    height: 45px!important;
+  }
+  &__buttons{
+    display:flex;
+    justify-content:end;
+    gap: 5em;
+    margin-bottom: 5em;
+  }
 }
+
+
 @media only screen and (min-width: 1000px) {
   .menu{
     padding: 0 15%;
@@ -106,6 +121,9 @@ $third-font: 'Roboto', sans-serif;
     }
     &__desktop{
       display: block;
+    }
+    &__movil{
+      display: none;
     }
   }
 }

@@ -6,6 +6,9 @@ $color: #FFFFFF;
 .counter{
   padding: 5%;
   margin-bottom: 10%;
+  &__desktop{
+    display: none;  }
+
   &__subtitle{
     color: #777777;
     font-family: $secondary-font;

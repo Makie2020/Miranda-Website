@@ -56,16 +56,24 @@ $color: #FFFFFF;
       background-image: url(../../../icons/PenDetails.png);
       background-repeat: no-repeat;
       background-position: left 10px top 18px;
-      padding-bottom: 200px;
+      padding: 20px 20px 15em 20px;
+      width: 90%;
+      border:none;
+      background-color: #F8F8F8;
+      margin: 2%;
       &::-webkit-input-placeholder{
-        padding-bottom: 200px;
+        padding-left: 20px;
+        font-family: $third-font;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
       }
     }
     &__button{
       background-color:  #BEAD8E;
       color: $color;
-      padding: 5%;
-      width: 75%;
+      padding: 1.35em 6.2em;
+      margin:0 0.3em 0.3em 0;
       border: none;
       font-family: $third-font;
       font-size: 16px;
@@ -73,6 +81,29 @@ $color: #FFFFFF;
       line-height: 19px;
       letter-spacing: 3.200000047683716px;
       margin-bottom: 5%;
+    }
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .form{
+    padding: 0% 15%;
+    margin: 0;
+  
+    &__form{
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+      &__input{
+        flex: 0 0 45%;
+      }
+      &__message{
+        width: 94%;
+        padding-bottom: 15em;
+   
+      }
+      &__button{
+        margin: 0 auto 10em auto;
+      }
     }
   }
 }

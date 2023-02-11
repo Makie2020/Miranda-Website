@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>  
     <title>Website Miranda Hotel</title>
 </head>
 <body>
@@ -21,11 +22,13 @@
   <section class="navbarSection">
     <nav class="navbar">
       <div class="navbar__left">
-        <p class="navbar__left__logo">H</p>
-        <div class="navbar__left__title">
-          <h4 class="navbar__left__title__hotel">HOTEL</h4>
-          <h4 class="navbar__left__title__name">MIRANDA</h4>
-        </div>
+        <a href="index.html" class="navbar__left__a">
+          <p class="navbar__left__logo">H</p>
+          <div class="navbar__left__title">
+            <h4 class="navbar__left__title__hotel">HOTEL</h4>
+            <h4 class="navbar__left__title__name">MIRANDA</h4>
+          </div>
+        </a>
       </div>
       
       <a id="menu-icon" class="navbar__icon" onclick="buttonClick()">
@@ -91,12 +94,14 @@
       <div class="form__imagebox">
         <img src="./images/20200703_142446.jpg" alt="picture of the swimmingpool" class="form__imagebox__img"/>
       </div>
-      <form class="form__form">
-        <input placeholder="Your full name" class="form__form__input form__form__name"/>
-        <input placeholder="Add phone number"class="form__form__input form__form__phone"/>
-        <input placeholder="Enter email address"class="form__form__input form__form__email"/>
-        <input placeholder="Enter subject"class="form__form__input form__form__subject"/>
-        <input placeholder="Enter message"class="form__form__input form__form__message"/>
+      <form>
+        <div class="form__form">
+          <input placeholder="Your full name" class="form__form__input form__form__name"/>
+          <input placeholder="Add phone number"class="form__form__input form__form__phone"/>
+          <input placeholder="Enter email address"class="form__form__input form__form__email"/>
+          <input placeholder="Enter subject"class="form__form__input form__form__subject"/>
+        </div>
+        <input placeholder="Enter message"class="form__form__message"/>
         <button class="form__form__button">SEND</button>
       </form>
 
@@ -114,7 +119,7 @@
           <p class="footer__text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
           <div class="footer__icons">
             <img src="./icons/Facebook.png" alt="Icon Facebook" class="footer__icons__icon"/>
-            <img src="./icons/Twitter.png" alt="Icon Twitter" class="footer__icons__icon footer__icons__icon__twitter"/>
+            <img src="./icons/twitter.svg" alt="Icon Twitter" class="footer__icons__icon footer__icons__icon__twitter" style="color:#777777"/>
             <img src="./icons/Behance.png" alt="Icon Behance" class="footer__icons__icon"/>
             <img src="./icons/LinkedIn.png" alt="Icon LinkedIn" class="footer__icons__icon"/>
             <img src="./icons/Youtube.png" alt="Icon Youtube" 

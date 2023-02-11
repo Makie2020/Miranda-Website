@@ -12,6 +12,5 @@ const swiper_main = new Swiper('.swiper_main', {
   },
   thumbs: {                           
       swiper: swiper_text,  
-    
   },                                  
 })

@@ -39,13 +39,6 @@
   font-weight: 400;
   line-height: 15px;
 }
-.availability__input__input__:-ms-input-placeholder {
-  font-family: "Archivo", sans-serif;
-  color: #777777;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 15px;
-}
 .availability__input__input__::placeholder {
   font-family: "Archivo", sans-serif;
   color: #777777;

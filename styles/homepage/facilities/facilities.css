@@ -97,6 +97,12 @@
   .facilities__infobox__pagination {
     display: none;
   }
+  .facilities__desktop {
+    display: block;
+  }
+  .facilities__movil {
+    display: none;
+  }
   .facilities__dec {
     display: none;
   }

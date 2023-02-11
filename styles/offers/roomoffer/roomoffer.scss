@@ -14,10 +14,16 @@ $color: #FFFFFF;
     height: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
+    position: relative;
     &__img{
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+    &__text{
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
     }
   }
   &__details{
@@ -47,6 +53,35 @@ $color: #FFFFFF;
       margin: 5% 0%;
       width: 95%;
     }
+    &__price{
+      display: none;
+    }
+    &__priceOld{
+      color: #BEAD8E;
+      font-family: $secondary-font;
+      font-size: 23px;
+      font-weight: 700;
+      line-height: 33px;
+    &__night{
+        font-family: $secondary-font;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 13px;
+      }
+    }
+      &__priceNew{
+        color:#DE5777;
+        font-family: $secondary-font;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 44px;
+        &__night{
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 17px;
+        }
+      }
+    
   }
    &__list{
     display: flex;
@@ -82,11 +117,77 @@ $color: #FFFFFF;
       line-height: 15px;
       letter-spacing: 2.8px;
       margin: 5% 0%;
+      &__desktop{
+        display: none;
+      }
+    }
+    &__line{
+      display: none;
     }
   }
 }
 @media only screen and (min-width: 1000px) {
   .offer{
     padding: 5% 15%;
+    &__imagebox{
+      &__text{
+        display: none;
+      }
+    }
+    &__container{
+      margin-top: -100px;
+      margin-left: 10%;
+      padding-left: 2em;
+      width: 80%;
+      background-color: #FFFFFF;
+      position: relative;
+      border-top: 6px solid  #BDAC8D;
+      &__details{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    &__details{
+      &__price{
+        padding: 2em 4em;
+        text-align: end;
+        display: block;
+      }
+      &__priceOld{
+        font-size: 30px;
+        &__night{
+          font-size: 12px;
+        }
+      }
+      &__priceNew{
+        font-size: 40px;
+        &__night{
+          font-size: 16px;
+        }
+      }
+    }
+    &__containerDetails{
+      display: flex;
+    }
+    &__detailsContainer{
+      flex: 1;
+    }
+    &__list{
+        flex: 1;
+    }
+    &__buttonbox{
+      &__button{
+        &__desktop{
+          display: block;
+        }
+        &__movil{
+          display: none;
+        }
+      }
+    }
+    &__line{
+       border-top: 2px solid #ECECEC;
+       width: 95%;
+    }
   }
 }

@@ -2,6 +2,9 @@
   padding: 5%;
   margin-bottom: 10%;
 }
+.counter__desktop {
+  display: none;
+}
 .counter__subtitle {
   color: #777777;
   font-family: "Archivo", sans-serif;

@@ -1,5 +1,6 @@
 .header {
   background-color: #333333;
+  position: relative;
   padding: 12% 5%;
 }
 .header__subtitle {
@@ -22,10 +23,12 @@
 }
 .header__box {
   background-color: #FFFFFF;
-  width: 45%;
-  padding: 5%;
-  float: right;
+  width: 160px;
+  padding: 3%;
   bottom: 0;
+  position: absolute;
+  right: 20px;
+  text-align: center;
 }
 .header__box__text {
   font-family: "Archivo", sans-serif;
@@ -47,7 +50,9 @@
     margin: 2% 0%;
   }
   .header__box {
-    width: 11em;
-    padding: 2%;
+    width: 160px;
+    padding: 1%;
+    right: 15%;
+    text-align: center;
   }
 }/*# sourceMappingURL=header.css.map */

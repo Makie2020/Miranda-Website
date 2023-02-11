@@ -16,8 +16,13 @@ $color: #FFFFFF;
   &__icons{
     &__icon{
       margin: 3%;
+      width: 20px;
+      height: 20px;
+      &:hover{
+        filter: brightness(50%);
+      }
       &__twitter{
-        background-image: url(../../../icons/BackgroundTwitter.png);
+        background-color:  #BEAD8E;
       }
     }
   }
@@ -73,14 +78,14 @@ $color: #FFFFFF;
 .disclaimer {
   background-color: #F8F8F8;
   width: 100%;
-  padding-top: 5%;
+  padding-top: 3%;
   &__text{
     font-family: $third-font;
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
     letter-spacing: -0.47999998927116394px;
-    padding-top: 5%;
+    padding-top: 2%;
   }
 }  
 @media only screen and (min-width: 1000px) {
@@ -113,7 +118,7 @@ $color: #FFFFFF;
   .disclaimer{
     display: flex;
     width: 100%;
-    padding: 0 15%;
+    padding: 2% 15%;
     justify-content: space-between;
   }
 }

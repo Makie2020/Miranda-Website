@@ -16,10 +16,8 @@
     <link rel="stylesheet" href="./styles/homepage/menu/menu.css"/>
     <link rel="stylesheet" href="./styles/homepage/facts/facts.css"/>
     <link rel="stylesheet" href="./styles/homepage/footer/footer.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -31,11 +29,13 @@
   <section class="navbarSection">
     <nav class="navbar">
       <div class="navbar__left">
-        <p class="navbar__left__logo">H</p>
-        <div class="navbar__left__title">
-          <h4 class="navbar__left__title__hotel">HOTEL</h4>
-          <h4 class="navbar__left__title__name">MIRANDA</h4>
-        </div>
+        <a href="index.html" class="navbar__left__a">
+          <p class="navbar__left__logo">H</p>
+          <div class="navbar__left__title">
+            <h4 class="navbar__left__title__hotel">HOTEL</h4>
+            <h4 class="navbar__left__title__name">MIRANDA</h4>
+          </div>
+        </a>
       </div>
       
       <a id="menu-icon" class="navbar__icon" onclick="buttonClick()">
@@ -230,7 +230,7 @@
     <section class="facilities">
       <h3 class="facilities__subtitle">FACILITIES</h3>
       <h1 class="facilities__title">Core Features</h1>
-      <div class="container">
+      <div class="container facilities__movil">
         <!-- main swiper container -->
         <div class="swiper swiper_main">
         <!-- wrapper for slide -->
@@ -354,6 +354,7 @@
     <section class="menu">
       <h3 class="menu__subtitle">MENU</h3>
       <h1 class="menu__title">Our Foods Menu</h1>
+      <div class="menu__movil">
       <div class="container">
         <!-- main swiper container -->
         <div class="swiper swiper_main">
@@ -438,11 +439,14 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            </div>     
+          </div>
+        </div>  
+        <div class="menu__buttons">
+          <div class="swiper-button-prev menu__button"></div>
+          <div class="swiper-button-next menu__button"></div>
         </div>
-
+     </div>  
       <div class="menu__desktop">
         <div class="menu__container">
           <div>
@@ -522,8 +526,34 @@
             </div>
           </div>
         </div> 
-      </div>       
-      <div class="menu__imagebox">
+      </div>
+      <div class="container">
+          <!-- main swiper container -->
+      <div class="swiper swiper_main">
+          <!-- wrapper for slide -->
+        <div class="swiper-wrapper">
+              <!-- single slide -->
+          <div class="swiper-slide">
+            <div class="menu__images">
+              <img src="./images/20200604_122923.jpg" alt="Bird at the beach" class="menu__images__photo"/>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="menu__images">
+              <img src="./images/20210512_153453.jpg" alt="View from a montain" class="menu__images__photo"/>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="menu__images">
+              <img src="./images/20211008_175807.jpg" alt="The beach" class="menu__images__photo"/>
+            </div>
+          </div>
+        </div>
+         <!-- pagination -->
+        <div class="swiper-pagination"></div>
+      </div>    
+    
+      <div class="menu__imagebox menu__desktop">
         <div class="menu__images">
           <img src="./images/20200604_122923.jpg" alt="Bird at the beach" class="menu__images__photo"/>
         </div>

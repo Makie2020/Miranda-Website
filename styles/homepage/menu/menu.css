@@ -69,6 +69,19 @@
   height: 100%;
   margin-left: 3%;
 }
+.menu__button {
+  position: unset !important;
+  right: auto !important;
+  margin: 0 !important;
+  width: 45px !important;
+  height: 45px !important;
+}
+.menu__buttons {
+  display: flex;
+  justify-content: end;
+  gap: 5em;
+  margin-bottom: 5em;
+}
 
 @media only screen and (min-width: 1000px) {
   .menu {
@@ -104,5 +117,8 @@
   }
   .menu__desktop {
     display: block;
+  }
+  .menu__movil {
+    display: none;
   }
 }/*# sourceMappingURL=menu.css.map */

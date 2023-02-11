@@ -10,12 +10,18 @@
   height: 100%;
   margin-top: 5%;
   margin-bottom: 5%;
+  position: relative;
 }
 .offer__imagebox__img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.offer__imagebox__text {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
 }
 .offer__details__subtitle {
   font-family: "Archivo", sans-serif;
@@ -42,6 +48,34 @@
   color: #777777;
   margin: 5% 0%;
   width: 95%;
+}
+.offer__details__price {
+  display: none;
+}
+.offer__details__priceOld {
+  color: #BEAD8E;
+  font-family: "Archivo", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 33px;
+}
+.offer__details__priceOld__night {
+  font-family: "Archivo", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 13px;
+}
+.offer__details__priceNew {
+  color: #DE5777;
+  font-family: "Archivo", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 44px;
+}
+.offer__details__priceNew__night {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17px;
 }
 .offer__list {
   display: flex;
@@ -77,9 +111,67 @@
   letter-spacing: 2.8px;
   margin: 5% 0%;
 }
+.offer__buttonbox__button__desktop {
+  display: none;
+}
+.offer__buttonbox__line {
+  display: none;
+}
 
 @media only screen and (min-width: 1000px) {
   .offer {
     padding: 5% 15%;
+  }
+  .offer__imagebox__text {
+    display: none;
+  }
+  .offer__container {
+    margin-top: -100px;
+    margin-left: 10%;
+    padding-left: 2em;
+    width: 80%;
+    background-color: #FFFFFF;
+    position: relative;
+    border-top: 6px solid #BDAC8D;
+  }
+  .offer__container__details {
+    display: flex;
+    justify-content: space-between;
+  }
+  .offer__details__price {
+    padding: 2em 4em;
+    text-align: end;
+    display: block;
+  }
+  .offer__details__priceOld {
+    font-size: 30px;
+  }
+  .offer__details__priceOld__night {
+    font-size: 12px;
+  }
+  .offer__details__priceNew {
+    font-size: 40px;
+  }
+  .offer__details__priceNew__night {
+    font-size: 16px;
+  }
+  .offer__containerDetails {
+    display: flex;
+  }
+  .offer__detailsContainer {
+    flex: 1;
+  }
+  .offer__list {
+    flex: 1;
+  }
+  .offer__buttonbox__button__desktop {
+    display: block;
+  }
+  .offer__buttonbox__button__movil {
+    display: none;
+  }
+  .offer__line {
+    border-top: 2px solid #ECECEC;
+    width: 95%;
   }
 }/*# sourceMappingURL=roomoffer.css.map */

@@ -100,6 +100,12 @@ $color: #FFFFFF;
         display: none;
       }
     }
+    &__desktop{
+      display: block;
+    }
+    &__movil{
+      display: none;
+    }
     &__dec{
       display: none;
     }

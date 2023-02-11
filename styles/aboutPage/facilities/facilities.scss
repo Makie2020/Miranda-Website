@@ -7,6 +7,9 @@ $color: #FFFFFF;
   background-color: #222222;
   color: $color;
   padding: 5%;
+  &__desktop{
+    display: none;
+  }
   &__subtitle{
     font-family: $secondary-font;
     font-size: 14px;
@@ -52,10 +55,6 @@ $color: #FFFFFF;
       font-weight: 400;
       line-height: 24px;
       width: 80%;
-    }
-    &__pagination{
-      text-align: center;
-      padding-top: 5%;
     }
   }
 }

@@ -7,6 +7,7 @@
 }
 .about__video {
   margin-bottom: 10%;
+  max-width: 80%;
   text-align: center;
 }
 .about__title {
