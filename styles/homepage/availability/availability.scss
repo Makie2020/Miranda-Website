@@ -16,11 +16,11 @@ $color: #FFFFFF;
     margin-bottom: 5%;
     &:last-of-type{
       margin-top: 5%;
+      width: 127px;
     }
   }
   &__input{
     &__box{
-      background: url(../../../icons/Date.png);
       background-repeat: no-repeat;
       background-position: center left;
       border-top-style: hidden;
@@ -29,6 +29,8 @@ $color: #FFFFFF;
       border-bottom: 1px solid #BEAD8E;
       padding: 8px;
       padding-right: 50%;
+      color: #222222;
+      font-family: $secondary-font;
       &::-webkit-input-placeholder{
         font-family: $third-font;
         font-size: 14px;
@@ -62,12 +64,13 @@ $color: #FFFFFF;
       display: flex;
       &__::placeholder{
         background-position: left 10px center;
+        color: #222222;
       }
     }
     &__input{
       &__box{
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 10%;
+        padding-right: 10%;
       }
     }
     &__firstbox{

@@ -14,9 +14,9 @@
 }
 .availibility__text:last-of-type {
   margin-top: 5%;
+  width: 127px;
 }
 .availibility__input__box {
-  background: url(../../../icons/Date.png);
   background-repeat: no-repeat;
   background-position: center left;
   border-top-style: hidden;
@@ -25,6 +25,8 @@
   border-bottom: 1px solid #BEAD8E;
   padding: 8px;
   padding-right: 50%;
+  color: #222222;
+  font-family: "Archivo", sans-serif;
 }
 .availibility__input__box::-webkit-input-placeholder {
   font-family: "Roboto", sans-serif;
@@ -59,13 +61,15 @@
   }
   .availibility__box__::-moz-placeholder {
     background-position: left 10px center;
+    color: #222222;
   }
   .availibility__box__::placeholder {
     background-position: left 10px center;
+    color: #222222;
   }
   .availibility__input__box {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .availibility__firstbox {
     margin-right: 20%;
