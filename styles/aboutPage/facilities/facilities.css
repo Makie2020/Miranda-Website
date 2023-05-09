@@ -24,12 +24,13 @@
   text-align: center;
 }
 .facilities__infobox {
-  margin-top: 10%;
   padding-left: 5%;
+  margin-top: 2em;
   background-color: #292929;
   background-repeat: no-repeat;
   background-position: right 10% top 10px;
-  height: 50vh;
+  height: 370px;
+  min-width: 290px;
 }
 .facilities__infobox__icon {
   width: 70px;
@@ -58,6 +59,9 @@
   .facilities {
     padding: 5% 15%;
   }
+  .facilities__movil {
+    display: none !important;
+  }
   .facilities__subtitle {
     margin: 2% 0%;
   }
@@ -68,8 +72,8 @@
     gap: 1em;
   }
   .facilities__infobox {
-    flex: 0 0 335px;
-    height: 36vh;
+    flex: 0 0 30%;
+    height: 320px;
     margin-top: 2em;
     padding-left: 2em;
     background-position: right top;

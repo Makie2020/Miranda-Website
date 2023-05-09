@@ -55,6 +55,9 @@
   height: 75%;
   width: 75%;
 }
+.about__image__img:first-of-type {
+  margin: 2em 0;
+}
 .about__container {
   background: #FFFFFF;
   text-align: center;

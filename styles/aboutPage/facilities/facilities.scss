@@ -28,12 +28,13 @@ $color: #FFFFFF;
     text-align: center;
   }
   &__infobox{
-    margin-top: 10%;
     padding-left: 5%;
+    margin-top: 2em;
     background-color:  #292929;
     background-repeat: no-repeat;
     background-position: right 10% top 10px;
-    height: 50vh;
+    height: 370px;
+    min-width: 290px;
     &__icon{
       width: 70px;
       height: 70px;
@@ -63,6 +64,9 @@ $color: #FFFFFF;
 @media only screen and (min-width: 1000px) {
   .facilities{
     padding: 5% 15%;
+    &__movil{
+      display: none !important;
+    }
     &__subtitle{
       margin: 2% 0%;
     }
@@ -73,8 +77,8 @@ $color: #FFFFFF;
       gap: 1em;
     }
     &__infobox{
-      flex: 0 0 335px;
-      height: 36vh;
+      flex: 0 0 30%;
+      height: 320px;
       margin-top: 2em;
       padding-left: 2em;
       background-position: right top;

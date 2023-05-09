@@ -34,7 +34,8 @@
 .intro__button {
   background-color: #BDAC8D;
   color: #FFFFFF;
-  padding: 5% 20%;
+  padding: 5% 15%;
+  margin-top: 2em;
 }
 .intro__button__desktop {
   display: none;
@@ -42,7 +43,7 @@
 
 @media only screen and (min-width: 1000px) {
   .intro {
-    padding: 7em 0 7em 15em;
+    padding: 7em 0 7em 7em;
     width: 100%;
     height: 40%;
     background: linear-gradient(to right, #222222 0%, #222222 75%, #AD9D82 75%, #AD9D82 100%);

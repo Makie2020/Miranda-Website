@@ -67,14 +67,11 @@
 .menu__images__photo {
   width: 100%;
   height: 100%;
-  margin-left: 3%;
+  margin-left: 5%;
 }
 .menu__button {
   position: unset !important;
-  right: auto !important;
-  margin: 0 !important;
-  width: 45px !important;
-  height: 45px !important;
+  color: #222222;
 }
 .menu__buttons {
   display: flex;
@@ -88,7 +85,7 @@
     padding: 0 15%;
   }
   .menu__title {
-    padding: 1em 0;
+    padding: 1em 0 0 0;
     margin: 0;
   }
   .menu__container {
@@ -117,8 +114,12 @@
   }
   .menu__desktop {
     display: block;
+    top: -100px;
   }
   .menu__movil {
     display: none;
+  }
+  .menu__buttons {
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=menu.css.map */

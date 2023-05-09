@@ -1,16 +1,12 @@
-.about {
+.aboutPage {
   text-align: center;
-  margin-top: 20%;
-  margin-bottom: 15%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 5%;
 }
-.about__video {
-  margin-bottom: 10%;
-  max-width: 80%;
+.aboutPage__video {
+  margin-bottom: 8%;
   text-align: center;
 }
-.about__title {
+.aboutPage__title {
   font-family: "Old Standard TT", serif;
   font-size: 32px;
   font-weight: 400;
@@ -18,15 +14,16 @@
 }
 
 @media only screen and (min-width: 1000px) {
-  .about {
+  .aboutPage {
     margin: 0 15%;
   }
-  .about__video {
-    margin-left: 15%;
-    margin-bottom: 5%;
+  .aboutPage__video {
+    margin: 0 auto;
+    padding-top: 2em;
   }
-  .about__title {
+  .aboutPage__title {
     width: 65%;
     margin: 0 auto;
+    padding-top: 2em;
   }
 }/*# sourceMappingURL=aboutInfo.css.map */

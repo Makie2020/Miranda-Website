@@ -51,7 +51,8 @@ $secondary-font: 'Archivo', sans-serif;
   &__list{
     display: none;
     position: absolute;
-    top: 4.6rem;
+    top: 3.2rem;
+    left: 0;
     width: 100%;
     text-align: center;
   }
@@ -75,8 +76,8 @@ $secondary-font: 'Archivo', sans-serif;
   font-weight: 600;
   line-height: 17px;
   box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.29);
-
-  }
+  z-index: 3;
+}
 .navbar__list a {
     display: block;
     margin: 5%;
@@ -104,6 +105,7 @@ $secondary-font: 'Archivo', sans-serif;
         line-height: 43.52px;
         width: 60px;
         height: 60px;
+        padding: 8%;
         display: flex;
         justify-content: center;
         align-items: center;      

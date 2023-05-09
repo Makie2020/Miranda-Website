@@ -62,6 +62,9 @@ $color: #FFFFFF;
       object-fit: contain;
       height: 75%;
       width: 75%;
+      &:first-of-type{
+        margin: 2em 0;
+      }
     }
   }
   &__container{

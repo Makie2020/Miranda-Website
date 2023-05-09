@@ -67,15 +67,12 @@ $third-font: 'Roboto', sans-serif;
     &__photo{
       width: 100%;
       height: 100%;
-      margin-left: 3%;
+      margin-left: 5%;
     }
   }
   &__button {
     position:unset !important;
-    right: auto !important;
-    margin: 0 !important;
-    width: 45px !important;
-    height: 45px!important;
+    color: #222222;
   }
   &__buttons{
     display:flex;
@@ -90,7 +87,7 @@ $third-font: 'Roboto', sans-serif;
   .menu{
     padding: 0 15%;
     &__title{
-      padding: 1em 0;
+      padding: 1em 0 0 0;
       margin: 0;
     }
     &__container{
@@ -121,9 +118,13 @@ $third-font: 'Roboto', sans-serif;
     }
     &__desktop{
       display: block;
+      top: -100px;
     }
     &__movil{
       display: none;
+    }
+    &__buttons {
+      margin-bottom: 0;
     }
   }
 }

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./styles/offers/roomoffer/roomoffer.css"/>
     <link rel="stylesheet" href="./styles/offers/popular/popular.css"/>
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -265,26 +265,106 @@
     <section class="popular">
       <h3 class="popular__subtitle">POPULAR LIST</h3>
       <h1 class="popular__title">Popular Rooms</h1>
-      <div class="popular__imageBox">
-        <img src="./images/20200821_111838.jpg" alt="view apartment" class="popular__imageBox__img"/>
-      </div>
-      <div class="popular__iconbox">
-        <img src="./icons/Bed_icon.png" class="popular__iconbox__icon"/>
-        <img src="./icons/Wifi.png"class="popular__iconbox__icon"/>
-        <img src="./icons/Car.png"class="popular__iconbox__icon"/>
-        <img src="./icons/SnowFlake.png"class="popular__iconbox__icon"/>
-        <img src="./icons/Gym.png"class="popular__iconbox__icon"/>
-        <img src="./icons/NoSmoking.png"class="popular__iconbox__icon"/>
-        <img src="./icons/Cocktail.png"class="popular__iconbox__icon"/>
-      </div>
-      <div class="popular__infobox">
-        <h3 class="popular__infobox__title">Minimal Duplex Room</h3>
-        <p class="popular__infobox__text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-        <div class="popular__infobox__data">
-          <p class="popular__infobox__data__price">$345/Night</p>
-          <p class="popular__infobox__data__button">Booking Now</p>
+      <div class="popular__container">
+        <div class="popular__container__column">
+          <div class="popular__imageBox">
+            <img src="./images/20200821_111838.jpg" alt="view apartment" class="popular__imageBox__img"/>
+          </div>
+          <div class="popular__iconbox">
+            <img src="./icons/Bed_icon.png" class="popular__iconbox__icon"/>
+            <img src="./icons/Wifi.png"class="popular__iconbox__icon"/>
+            <img src="./icons/Car.png"class="popular__iconbox__icon"/>
+            <img src="./icons/SnowFlake.png"class="popular__iconbox__icon"/>
+            <img src="./icons/Gym.png"class="popular__iconbox__icon"/>
+            <img src="./icons/NoSmoking.png"class="popular__iconbox__icon"/>
+            <img src="./icons/Cocktail.png"class="popular__iconbox__icon"/>
+          </div>
+          <div class="popular__infobox">
+            <h3 class="popular__infobox__title">Minimal Duplex Room</h3>
+            <p class="popular__infobox__text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+            <div class="popular__infobox__data">
+              <p class="popular__infobox__data__price">$345/Night</p>
+              <p class="popular__infobox__data__button">Booking Now</p>
+            </div>
+          </div>
+        </div>
+        <div class="popular__container__column">
+          <div class="popular__imageBox">
+            <img src="./images/20200821_111838.jpg" alt="view apartment" class="popular__imageBox__img"/>
+          </div>
+          <div class="popular__iconbox">
+            <img src="./icons/Bed_icon.png" class="popular__iconbox__icon"/>
+            <img src="./icons/Wifi.png"class="popular__iconbox__icon"/>
+            <img src="./icons/Car.png"class="popular__iconbox__icon"/>
+            <img src="./icons/SnowFlake.png"class="popular__iconbox__icon"/>
+            <img src="./icons/Gym.png"class="popular__iconbox__icon"/>
+            <img src="./icons/NoSmoking.png"class="popular__iconbox__icon"/>
+            <img src="./icons/Cocktail.png"class="popular__iconbox__icon"/>
+          </div>
+          <div class="popular__infobox">
+            <h3 class="popular__infobox__title">Minimal Duplex Room</h3>
+            <p class="popular__infobox__text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+            <div class="popular__infobox__data">
+              <p class="popular__infobox__data__price">$345/Night</p>
+              <p class="popular__infobox__data__button">Booking Now</p>
+            </div>
+          </div>
+        </div>
+        <div class="popular__container__column">
+          <div class="popular__imageBox">
+            <img src="./images/20200821_111838.jpg" alt="view apartment" class="popular__imageBox__img"/>
+          </div>
+          <div class="popular__iconbox">
+            <img src="./icons/Bed_icon.png" class="popular__iconbox__icon"/>
+            <img src="./icons/Wifi.png"class="popular__iconbox__icon"/>
+            <img src="./icons/Car.png"class="popular__iconbox__icon"/>
+            <img src="./icons/SnowFlake.png"class="popular__iconbox__icon"/>
+            <img src="./icons/Gym.png"class="popular__iconbox__icon"/>
+            <img src="./icons/NoSmoking.png"class="popular__iconbox__icon"/>
+            <img src="./icons/Cocktail.png"class="popular__iconbox__icon"/>
+          </div>
+          <div class="popular__infobox">
+            <h3 class="popular__infobox__title">Minimal Duplex Room</h3>
+            <p class="popular__infobox__text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+            <div class="popular__infobox__data">
+              <p class="popular__infobox__data__price">$345/Night</p>
+              <p class="popular__infobox__data__button">Booking Now</p>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="container popular__swiper">
+        <!-- main swiper container -->
+        <div class="swiper swiper_offer">
+        <!-- wrapper for slide -->
+            <div class="swiper-wrapper">
+            <!-- single slide -->
+                <div class="swiper-slide">
+                  <div class="popular__imageBox">
+                    <img src="./images/20200821_111838.jpg" alt="view apartment" class="popular__imageBox__img"/>
+                  </div>
+                  <div class="popular__iconbox">
+                    <img src="./icons/Bed_icon.png" class="popular__iconbox__icon"/>
+                    <img src="./icons/Wifi.png"class="popular__iconbox__icon"/>
+                    <img src="./icons/Car.png"class="popular__iconbox__icon"/>
+                    <img src="./icons/SnowFlake.png"class="popular__iconbox__icon"/>
+                    <img src="./icons/Gym.png"class="popular__iconbox__icon"/>
+                    <img src="./icons/NoSmoking.png"class="popular__iconbox__icon"/>
+                    <img src="./icons/Cocktail.png"class="popular__iconbox__icon"/>
+                  </div>
+                  <div class="popular__infobox">
+                    <h3 class="popular__infobox__title">Minimal Duplex Room</h3>
+                    <p class="popular__infobox__text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                    <div class="popular__infobox__data">
+                      <p class="popular__infobox__data__price">$345/Night</p>
+                      <p class="popular__infobox__data__button">Booking Now</p>
+                    </div>
+                </div>                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+          </div>   
+        </div>
     </section>
     <div class="popular__seperation"></div>
     <!--FOOTER --> 
@@ -360,7 +440,7 @@
       <p class="disclaimer__text">Copyright By@Marieke - 2023</p>
       <p class="disclaimer__text">Terms of use | Privacy Environmental Policy</p>
     </div> 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./javascript/homepage.js"></script>
     <script src="./javascript/swiper.js"></script>
 </body>

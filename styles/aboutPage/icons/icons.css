@@ -9,7 +9,7 @@
 }
 .icons__box {
   flex: 1;
-  padding: 10%;
+  padding: 11% 0;
 }
 .icons__box__data__img {
   margin-bottom: 5%;
@@ -33,13 +33,23 @@
   .icons {
     display: flex;
     justify-content: center;
-    gap: 10em;
-    padding: 0% 15%;
+    align-items: center;
+    margin-top: 2em;
   }
   .icons__box {
     margin-right: 5em;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .icons__desktop {
     display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=icons.css.map */

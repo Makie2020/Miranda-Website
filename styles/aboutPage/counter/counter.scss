@@ -6,9 +6,6 @@ $color: #FFFFFF;
 .counter{
   padding: 5%;
   margin-bottom: 10%;
-  &__desktop{
-    display: none;  }
-
   &__subtitle{
     color: #777777;
     font-family: $secondary-font;
@@ -30,6 +27,7 @@ $color: #FFFFFF;
     display: flex;
     align-items: center;
     margin: 10% 5%;
+    justify-content: center;
     &__text{
       margin: 0px 15% 0px 5%;
       &__number{
@@ -57,12 +55,21 @@ $color: #FFFFFF;
       height: 100%;
     }
   }
+  &__imageContainer{
+    display: none;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .counter{
-    padding: 5% 15%;
+    padding: 0% 15%;
     &__container{
       display: flex;
+    }
+    &__movil{
+      display: none !important;
+    }
+    &__desktop{
+      display: block !important;
     }
     &__imageContainer{
       display: flex;

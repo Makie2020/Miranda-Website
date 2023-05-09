@@ -3,7 +3,7 @@ $secondary-font: 'Archivo', sans-serif;
 $third-font: 'Roboto', sans-serif;
 $color: #FFFFFF;
 
-.facilities{
+.facilitiesHome{
   padding: 6%;
   &__subtitle{
     font-family: $secondary-font;
@@ -67,12 +67,15 @@ $color: #FFFFFF;
   &__decfull{
     display: none;
   }
+  &__pagination{
+    padding-top: 10%;
+  }
 }
 @media only screen and (min-width: 1000px) {
-  .facilities{
+  .facilitiesHome{
     padding: 10% 15%;
     &__subtitle{
-      margin: 0;
+      margin-top: 2em;
     }
     &__title{
       text-align: center;
@@ -82,10 +85,11 @@ $color: #FFFFFF;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin: 0% 10%;
       gap: 5%;
       margin-top: 2em;
       &__box{
-        flex: 0 0 295px;
+        flex: 0 0 30%;
         background-position: right 10% top;
         background-size: 5em;
         margin-top: 3em;
@@ -101,10 +105,12 @@ $color: #FFFFFF;
       }
     }
     &__desktop{
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
     }
     &__movil{
-      display: none;
+      display: none!important;
     }
     &__dec{
       display: none;
@@ -117,6 +123,5 @@ $color: #FFFFFF;
       width: 354px;
       height: 230px;
     }
-
   }
 }

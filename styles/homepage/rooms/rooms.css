@@ -1,6 +1,7 @@
 .rooms {
   padding-left: 5%;
   text-align: center;
+  position: relative;
 }
 .rooms__subtitle {
   color: #777777;
@@ -22,7 +23,10 @@
 .rooms__iconbox {
   background: #FFFFFF;
   box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
-  bottom: -10em;
+  top: 20px;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
 }
 .rooms__iconbox__icon {
   margin: 2%;
@@ -30,6 +34,13 @@
 .rooms__info {
   text-align: center;
   margin-right: 5%;
+  background-color: #FFFFFF;
+  width: 70%;
+  margin: 0 auto;
+  top: -22px;
+  z-index: 1;
+  position: relative;
+  padding: 2em;
 }
 .rooms__info__title {
   font-family: "Old Standard TT", serif;
@@ -89,45 +100,74 @@
 
 .swiper-button-prev {
   background-color: #FFFFFF;
-  padding: 3%;
+  color: #222222 !important;
 }
 
 .swiper-button-next {
   color: #FFFFFF;
   background-color: #BDAC8D;
-  padding: 3%;
+  color: var(--swiper-navigation-color);
 }
 
-.swiper_text {
-  position: relative;
-  top: -2em;
-  background-color: #FFFFFF;
-  width: 65%;
-  display: flex;
+:root {
+  --swiper-navigation-color: #FFFFFF;
+  --swiper-theme-color: black;
 }
 
 @media only screen and (min-width: 1000px) {
   .rooms {
     padding-top: 7em;
+    padding-bottom: 10em;
+    padding-left: 0;
     text-align: center;
   }
+  .rooms__container {
+    position: relative;
+  }
   .rooms__iconbox {
-    width: 15em;
+    width: 230px;
+    position: absolute;
+    top: -3px;
+    height: 30px;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .rooms__info {
     display: flex;
     justify-content: center;
+    background-color: #FFFFFF;
     text-align: left;
-    padding: 2em;
+    position: relative;
+    padding: 1em;
+    width: 326px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -100px;
+    height: 200px;
   }
   .rooms__info__title {
     font-size: 28px;
   }
   .rooms__info__firstbox {
-    flex: 2;
+    flex: 3;
   }
   .rooms__info__secondbox {
     flex: 1;
     padding-top: 2em;
+  }
+  .swiper {
+    width: 100%;
+  }
+  .swiper-slide {
+    height: 550px;
+  }
+  .image__wrapper {
+    height: 550px;
   }
 }/*# sourceMappingURL=rooms.css.map */

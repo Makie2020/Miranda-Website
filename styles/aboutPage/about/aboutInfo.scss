@@ -3,15 +3,11 @@ $secondary-font: 'Archivo', sans-serif;
 $third-font: 'Roboto', sans-serif;
 $color: #FFFFFF;
 
-.about{
+.aboutPage{
   text-align: center;
-  margin-top: 20%;
-  margin-bottom: 15%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 5%;
   &__video{
-    margin-bottom: 10%;
-    max-width: 80%;
+    margin-bottom: 8%;
     text-align: center;
   }
   &__title{
@@ -20,19 +16,18 @@ $color: #FFFFFF;
     font-weight: 400;
     color: #222222;
   }
-
 }
 @media only screen and (min-width: 1000px) {
-  .about{
+  .aboutPage{
     margin: 0 15%;
     &__video{
-      margin-left: 15%;
-      margin-bottom: 5%;
+      margin: 0 auto;
+      padding-top: 2em;
     }
     &__title{
       width: 65%;
       margin: 0 auto;
+      padding-top: 2em;
     }
   }
-
 }

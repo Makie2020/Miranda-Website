@@ -80,7 +80,28 @@
   font-weight: 700;
   line-height: 17px;
 }
+.popular__container {
+  display: none;
+}
 .popular__seperation {
   height: 50px;
   background-color: #FFFFFF;
+}
+
+@media only screen and (min-width: 1000px) {
+  .popular {
+    padding: 5% 15%;
+  }
+  .popular__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+  }
+  .popular__container__column {
+    flex: 0 0 25%;
+  }
+  .popular__swiper {
+    display: none;
+  }
 }/*# sourceMappingURL=popular.css.map */
